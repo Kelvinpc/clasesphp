@@ -34,7 +34,11 @@ class alternativas{
     $stmt = $this->conexion->prepare($sql);
     $stmt->execute(
       array(
-        $params["texto,escorrecto,idpregunta,fechacreacion,fechamodificacion"]
+        $params['texto'],
+        $params['escorrecto'],
+        $params['idpregunta'],
+        $params['fechacreacion'],
+        $params['fechamodificacion']
 
       )
     );

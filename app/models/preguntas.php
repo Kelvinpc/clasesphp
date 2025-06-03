@@ -36,7 +36,12 @@ class preguntas{
     $stmt = $this->conexion->prepare($sql);
     $stmt->execute(
       array(
-        $params["pregunta, puntaje, idevaluacion, fechacreacion, fechamodificacion"]
+
+        $params['pregunta'],
+        $params['puntaje'],
+        $params['idevaluacion'],
+        $params['fechacreacion'],
+        $params['fechamodificacion']
 
       )
     );

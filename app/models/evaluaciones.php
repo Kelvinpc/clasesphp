@@ -39,7 +39,16 @@ class evaluaciones{
     $stmt = $this->conexion->prepare($sql);
     $stmt->execute(
       array(
-        $params["titulo, preguntas, intentosDisponible, fechainicio, fechafin, duracion, idcurso, fechacreacion, fechamodificacion"]
+
+        $params['titulo'],
+        $params['preguntas'],
+        $params['intentosDisponible'],
+        $params['fechainicio'],
+        $params['fechafin'],
+        $params['duracion'],
+        $params['idcurso'],
+        $params['fechacreacion'],
+        $params['fechamodificacion']
 
       )
     );
