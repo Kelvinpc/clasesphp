@@ -31,7 +31,7 @@ class preguntas{
   public function add($params = []): int{
 
 
-    $sql = "INSERT INTO (pregunta, puntaje, idevaluacion, fechacreacion, fechamodificacion)VALUES(?,?,?,?,?)"; //? = comodín (índice-ubicación)
+    $sql = "INSERT INTO preguntas(pregunta, puntaje, idevaluacion, fechacreacion, fechamodificacion)VALUES(?,?,?,?,?)"; //? = comodín (índice-ubicación)
     
     $stmt = $this->conexion->prepare($sql);
     $stmt->execute(

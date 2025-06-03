@@ -34,7 +34,7 @@ class evaluaciones{
 
 
 
-    $sql = "INSERT INTO (titulo, preguntas, intentosDisponible, fechainicio, fechafin, duracion, idcurso, fechacreacion, fechamodificacion)VALUES(?,?,?,?,?,?,?,?,?)"; //? = comodín (índice-ubicación)
+    $sql = "INSERT INTO evaluaciones(titulo, preguntas, intentosDisponible, fechainicio, fechafin, duracion, idcurso, fechacreacion, fechamodificacion)VALUES(?,?,?,?,?,?,?,?,?)"; //? = comodín (índice-ubicación)
     
     $stmt = $this->conexion->prepare($sql);
     $stmt->execute(

@@ -29,7 +29,7 @@ class alternativas{
    * @return int
    */
   public function add($params = []): int{
-    $sql = "INSERT INTO (texto,escorrecto,idpregunta,fechacreacion,fechamodificacion)VALUES(?,?,?,?,?)"; //? = comodín (índice-ubicación)
+    $sql = "INSERT INTO alternativas(texto,escorrecto,idpregunta,fechacreacion,fechamodificacion)VALUES(?,?,?,?,?)"; //? = comodín (índice-ubicación)
     
     $stmt = $this->conexion->prepare($sql);
     $stmt->execute(
